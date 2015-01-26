@@ -1,0 +1,39 @@
+﻿<Window x:Class="SampleApplication.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://www.codeplex.com/prism"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        xmlns:controls="clr-namespace:SampleApplication.Controls;assembly=SampleApplication.Controls"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="CanResizeWithGrip"
+        Title="Sample Application">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <controls:TitleBar Grid.Row="0" Title="Sample Application" />
+        <ItemsControl Name="MenuRegion" Grid.Row="1" prism:RegionManager.RegionName="MenuRegion" prism:RegionManager.RegionContext="{Binding}" />
+
+        <telerik:RadDocking x:Name="Dock" Grid.Row="2" PreviewShowCompass="DockCompassPreview" ActivePaneChanged="ActivePaneChanged" Close="OnClose">
+            <telerik:RadSplitContainer>
+                <telerik:RadPaneGroup x:Name="Sidebar" Style="{DynamicResource SidebarStyle}">
+                    <telerik:RadPane PaneHeaderVisibility="Collapsed">
+                        <ItemsControl Name="SidebarRegion" prism:RegionManager.RegionName="SidebarRegion" prism:RegionManager.RegionContext="{Binding}" />
+                    </telerik:RadPane>
+                </telerik:RadPaneGroup>
+            </telerik:RadSplitContainer>
+            <telerik:RadDocking.DocumentHost>
+                <telerik:RadSplitContainer Style="{DynamicResource TabbedPanesStyle}">
+                    <telerik:RadPaneGroup x:Name="PaneGroup" />
+                </telerik:RadSplitContainer>
+            </telerik:RadDocking.DocumentHost>
+        </telerik:RadDocking>
+
+    </Grid>
+    
+</Window>

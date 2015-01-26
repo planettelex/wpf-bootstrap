@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+
+        <ResourceDictionary Source="Brushes.xaml" />
+
+        <!-- Icons  -->
+        <ResourceDictionary Source="Icons/WindowCloseIcon.xaml" />
+        <ResourceDictionary Source="Icons/WindowMaximizeIcon.xaml" />
+        <ResourceDictionary Source="Icons/WindowMinimizeIcon.xaml" />
+        <ResourceDictionary Source="Icons/WindowRestoreIcon.xaml" />
+
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

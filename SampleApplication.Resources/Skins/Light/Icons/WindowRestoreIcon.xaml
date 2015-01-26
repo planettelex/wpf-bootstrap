@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../Brushes.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <DrawingImage x:Key="WindowRestoreIcon">
+        <DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+                    <GeometryDrawing Brush="{StaticResource NormalForegroundBrush}" Geometry="F1 M 13.3333,20L 2.66666,20L 2.66666,12L 13.3333,12M 0,22.6667L 16,22.6667L 16,6.66666L 0,6.66666L 0,22.6667 Z "/>
+                    <GeometryDrawing Brush="{StaticResource NormalForegroundBrush}" Geometry="F1 M 5.33333,3.05176e-005L 5.33333,6.66666L 8,6.66666L 8,5.33334L 18.6667,5.33334L 18.6667,13.3333L 14.6667,13.3333L 14.6667,16L 21.3333,16L 21.3333,3.05176e-005L 5.33333,3.05176e-005 Z "/>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+</ResourceDictionary>

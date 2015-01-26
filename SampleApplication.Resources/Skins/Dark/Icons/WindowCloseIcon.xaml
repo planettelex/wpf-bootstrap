@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../Brushes.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <DrawingImage x:Key="WindowCloseIcon">
+        <DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+                    <GeometryDrawing Brush="{StaticResource NormalForegroundBrush}" Geometry="F1 M 18.856,15.084L 13.1986,9.4267L 18.856,3.77069L 15.0826,0L 9.42664,5.65601L 3.77063,0L 0,3.77069L 5.65598,9.42804L 0,15.084L 3.77063,18.856L 9.42664,13.1987L 15.0853,18.856L 18.856,15.084 Z "/>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+</ResourceDictionary>

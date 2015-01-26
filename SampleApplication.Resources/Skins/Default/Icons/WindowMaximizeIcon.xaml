@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../Brushes.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <DrawingImage x:Key="WindowMaximizeIcon">
+        <DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+                    <GeometryDrawing Brush="{StaticResource NormalForegroundBrush}" Geometry="F1 M 18.6667,20L 2.66667,20L 2.66667,6.66666L 18.6667,6.66666M 0,22.6667L 21.3333,22.6667L 21.3333,-3.05176e-005L 0,-3.05176e-005L 0,22.6667 Z "/>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+</ResourceDictionary>
