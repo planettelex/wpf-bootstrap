@@ -3,7 +3,9 @@
 
 ![3]
 Kickstart your WPF PRISM Application with Telerik controls by using this WPF Bootstrap. It creates a project structure for a WPF PRISM application, then goes on to integrate with the Telerik WPF UI controls to provide a docking and tab enriched user interface where PRISM modules are injected into tabs dynamically.
+
 WPF Bootstrap also provides the infrastructure for a "skinnable" WPF application- where the user can dynamically change color and icon resources from a menu option. The bootstrap ships with a default, light and dark skin to get you started.
+
 It also includes a custom title bar that use the application's skin. The title bar has all the normal Windows title bar functions. A main menu is included as well, with functioning Exit, Duplicate Tab, Close All Tabs, Close Other Tabs menu options, along with skin selection options.
 #### [View Documentation][2]
 
